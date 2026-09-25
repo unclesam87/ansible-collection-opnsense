@@ -32,7 +32,6 @@ def run_module():
                 'rule',
                 'route',
                 'gateway',
-                'gateway_group',
                 'cron',
                 'unbound',
                 'syslog',
@@ -93,10 +92,6 @@ def run_module():
         elif target == 'route':
             from ansible_collections.oxlorg.opnsense.plugins.module_utils.main.route import \
                 Route as Target_Obj
-
-        elif target == 'gateway_group':
-            from ansible_collections.oxlorg.opnsense.plugins.module_utils.main.gateway_group import \
-                GatewayGroup as Target_Obj
 
         elif target == 'gateway':
             from ansible_collections.oxlorg.opnsense.plugins.module_utils.main.gateway import \

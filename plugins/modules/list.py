@@ -24,7 +24,7 @@ except MODULE_EXCEPTIONS:
 # EXAMPLES = 'https://ansible-opnsense.oxl.app/general/list.html'
 
 TARGETS = [
-    'alias', 'rule', 'rule_interface_group', 'route', 'gateway', 'gateway_group', 'trust_ca', 'trust_cert',
+    'alias', 'rule', 'rule_interface_group', 'route', 'gateway', 'trust_ca', 'trust_cert',
     'syslog', 'package', 'unbound_host',
     'frr_ospf_general', 'frr_ospf3_general', 'unbound_forward', 'shaper_pipe', 'shaper_queue', 'shaper_rule',
     'monit_service', 'monit_test', 'monit_alert', 'wireguard_server', 'bind_domain', 'wireguard_peer', 'interface_vlan',
@@ -98,10 +98,6 @@ def run_module():
         elif target == 'route':
             from ansible_collections.oxlorg.opnsense.plugins.module_utils.main.route import \
                 Route as Target_Obj
-
-        elif target == 'gateway_group':
-            from ansible_collections.oxlorg.opnsense.plugins.module_utils.main.gateway_group import \
-                GatewayGroup as Target_Obj
 
         elif target == 'trust_ca':
             from ansible_collections.oxlorg.opnsense.plugins.module_utils.main.trust import \

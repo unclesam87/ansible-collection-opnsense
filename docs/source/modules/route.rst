@@ -17,16 +17,14 @@ Static Routes
 
 **Service Docs**: `Routes <https://docs.opnsense.org/manual/routes.html>`_
 
-Gateways
-========
+Gateway Groups
+==============
 
 **TESTS**: `gateway <https://github.com/O-X-L/ansible-opnsense/blob/latest/tests/gateway.yml>`_
 
 **API Docs**: `Core - routings <https://docs.opnsense.org/development/api/core/routing.html>`_
 
 **Service Docs**: `routings <https://docs.opnsense.org/manual/gateways.html>`_
-
-For gateway tiers and failover groups, see :ref:`modules_gateway_group`.
 
 Contribution
 ************

@@ -106,7 +106,6 @@ action_groups:
   route:
     - oxlorg.opnsense.route
     - oxlorg.opnsense.gateway
-    - oxlorg.opnsense.gateway_group
   nat:
     - oxlorg.opnsense.nat_source
     - oxlorg.opnsense.nat_one_to_one
